@@ -10,8 +10,19 @@ const description = "Gabriel Madruga's site";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="hsl(32,  72%, 64%)" />
+
     <meta name="color-scheme" content="dark light" />
+    <meta
+      name="theme-color"
+      content="black"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta
+      name="theme-color"
+      content="white"
+      media="(prefers-color-scheme: light)"
+    />
+
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -72,6 +83,7 @@ const description = "Gabriel Madruga's site";
         flex-direction: column;
         justify-content: center;
         min-height: 100vh;
+        min-height: 100svh;
         margin: 0;
       }
 
