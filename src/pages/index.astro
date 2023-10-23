@@ -1,0 +1,109 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import '../styles/animate.css';
+---
+
+<Layout>
+  <script
+    src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
+    async></script>
+  <main>
+    <section>
+      <h1 class="animate fade slide">Gabriel Madruga</h1>
+      <!-- <h2 class="animate fade slide delay-1">Computer Engineer</h2>
+      <p></p> -->
+
+      <div class="buttons animate fade slide delay-1">
+        <a
+          class="button"
+          aria-label="Send me an email"
+          href="mailto:gabriel.madru@gmail.com"
+          target="_blank"
+          ><iconify-icon icon="mdi:email" style="font-size: 1.5em"
+          ></iconify-icon>Send me an email</a
+        >
+        <a
+          class="button"
+          aria-label="Chat on WhatsApp"
+          href="https://wa.me/598098035520"
+          target="_blank"
+          ><iconify-icon icon="logos:whatsapp-icon" style="font-size: 1.5em"
+          ></iconify-icon>Chat on WhatsApp</a
+        >
+
+        <a class="button" aria-label="CV" href="/cv"
+          ><iconify-icon icon="pepicons-pencil:cv" style="font-size: 1.5em"
+          ></iconify-icon>CV</a
+        >
+      </div>
+
+      <!-- <div>
+        <iconify-icon icon="mdi:location"></iconify-icon>
+        <span>Montevideo, Uruguay</span>
+      </div> -->
+    </section>
+  </main>
+
+  <style>
+    main {
+      padding: 2em;
+      max-width: 50em;
+      margin: auto;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 4rem;
+      margin: 0.5em auto;
+      font-weight: 700;
+      text-align: center;
+      line-height: normal;
+    }
+    h2 {
+      margin: 2em auto;
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .buttons {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
+      flex-wrap: wrap;
+    }
+    .buttons .button {
+      min-width: 17ch;
+    }
+    @media only screen and (min-width: 20em) {
+      .buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1ch;
+      color: var(--color-text);
+      background-color: var(--color-background);
+      border: 0.125rem solid var(--color-text);
+      border-radius: 12px;
+      padding: 0.8em 1em;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .button:hover {
+      transform: translate(0, -5px);
+    }
+    .button:active {
+      box-shadow: none;
+      transform: translateY(0);
+    }
+  </style>
+</Layout>

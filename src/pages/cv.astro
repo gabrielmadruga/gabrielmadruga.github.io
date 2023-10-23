@@ -1,0 +1,787 @@
+---
+import '../styles/animate.css';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="description" content="Gabriel Madruga's CV" />
+    <meta property="og:title" content="CV - Gabriel Madruga" />
+    <meta property="og:description" content="Gabriel Madruga's CV" />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="https://madruga.dev" />
+    <link rel="canonical" href="https://madruga.dev" />
+
+    <!-- 
+      TODO: add social metadata?
+      https://www.digitalocean.com/community/tutorials/how-to-add-twitter-card-and-open-graph-social-metadata-to-your-webpage-with-html
+    /> -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g><text x='50%' y='60%' dominant-baseline='middle' text-anchor='middle' font-size='90%' fill='black'>GM</text></g></svg>"
+    />
+
+    <title>CV - Gabriel Madruga</title>
+    <script
+      src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
+      async></script>
+  </head>
+  <body>
+    <div class="cv-container animate">
+      <button
+        onclick="window.print(); return false;"
+        class="button"
+        role="button">Print</button
+      >
+      <!-- Basics -->
+      <section class="basics-section">
+        <h1>Gabriel Madruga</h1>
+        <div class="label row subtitle">Computer Engineer</div>
+
+        <div class="url row" hidden>
+          <iconify-icon icon="mdi:link-variant"></iconify-icon>
+          <a href="https://madruga.dev" target="_blank">madruga.dev</a>
+        </div>
+        <div class="summary p">
+          As a senior engineer with over 10 years of experience and a keen eye
+          for detail, I am passionate about frontend development. I thrive on
+          projects that demand meticulous attention to design and user
+          experience. My adaptability is evident in my history of working with
+          various languages and frameworks. I actively seek opportunities that
+          push me beyond my comfort zone, as continuous self-improvement is a
+          cornerstone of my professional ethos.
+          <br />
+           While technical proficiency is crucial, I believe successful projects
+          also hinge on effective communication. Expressing concerns,
+          identifying risks, and collaborating on solutions with the team are
+          integral aspects of my approach. I am eager to contribute my expertise
+          to cutting-edge projects that not only challenge my technical
+          abilities but also allow me to foster a collaborative and
+          communicative environment within the team.
+        </div>
+
+        <div class="contact row">
+          <div class="item">
+            <iconify-icon icon="mdi:email"></iconify-icon>
+            <span
+              ><a href="mailto:gabriel.madru@gmail.com"
+                >gabriel.madru@gmail.com</a
+              ></span
+            >
+          </div>
+
+          <div class="item">
+            <iconify-icon icon="mdi:phone"></iconify-icon>
+            <span>(+598) 098035520</span>
+          </div>
+
+          <div class="item">
+            <iconify-icon icon="mdi:location"></iconify-icon>
+            <span>Montevideo, Uruguay</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section class="work-section">
+        <div class="section-title">
+          <h2>Work</h2>
+          <div class="line"></div>
+        </div>
+        <div class="work section-item">
+          <div class="row space-between">
+            <h3>CALA</h3>
+            <div class="url row">
+              <iconify-icon icon="mdi:link-variant"></iconify-icon>
+              <a href="https://ca.la" target="_blank">ca.la</a>
+            </div>
+          </div>
+          <div class="row space-between">
+            <div class="position subtitle">Product Engineer</div>
+             Mar 2022 - Mar 2023
+          </div>
+          <div class="summary p">
+            Through its web-based platform and mobile app, CALA customers can
+            collaborate on design, fabric selection and product development, and
+            are instantly connected to a highly vettedglobal network of
+            manufacturing partners.
+          </div>
+
+          <div class="highlights row">
+            <ul>
+              <li>Engaged in full-stack development with a mobile focus.</li>
+              <li>
+                Did React Native development, including the creation of a
+                dynamic canvas and engaging animations.
+              </li>
+              <li>
+                Contributed to the backend using Node.js, TypeScript, Koa, and
+                Knex.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="work section-item">
+          <div class="row space-between">
+            <h3>Mercado Libre</h3>
+            <div class="url row">
+              <iconify-icon icon="mdi:link-variant"></iconify-icon>
+              <a href="https://mercadolibre.com" target="_blank"
+                >mercadolibre.com</a
+              >
+            </div>
+          </div>
+          <div class="row space-between">
+            <div class="position subtitle">Senior Software Engineer</div>
+             Jan 2021 - Feb 2022
+          </div>
+          <div class="summary p">
+            Mercado Pago is a leading digital payment platform affiliated with
+            MercadoLibre, offering a range of financial services across Latin
+            America. The platform facilitates online and in-store transactions,
+            including payments, money transfers, and digital wallet services.
+            Mercado Pago's mobile apps empower users to securely manage
+            transactions, make payments, and access a suite of financial
+            services, fostering seamless and convenient digital commerce
+            experiences.
+          </div>
+
+          <div class="highlights row">
+            <ul>
+              <li>
+                Collaborated on the development of Acquisition flows for the
+                Mercado Pago app in iOS for Brasil, Argentina, Mexico and
+                Uruguay.
+              </li>
+              <li>
+                Contributed to enhancing code quality for the team's
+                microservices in Node.js
+              </li>
+              <li>
+                Collaborated on initiatives to streamline app testing processes,
+                ensuring ease of testing by creating.
+              </li>
+              <li>
+                Worked on enhancing analytics capabilities to provide valuable
+                insights for continuous improvement.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="work section-item">
+          <div class="row space-between">
+            <h3>Acceleanation</h3>
+            <div class="url row">
+              <iconify-icon icon="mdi:link-variant"></iconify-icon>
+              <a href="https://acceleanation.com/" target="_blank"
+                >acceleanation.com</a
+              >
+            </div>
+          </div>
+          <div class="row space-between">
+            <div class="position subtitle">Teach Lead</div>
+             Nov 2018 - Jan 2021
+          </div>
+          <div class="summary p">
+            Acceleanation helps clients all over the globe, turning technology
+            infrastructure into a highly leveraged, differentiating asset for
+            businesses in the manufacturing, logistics and retail sectors.
+          </div>
+
+          <div class="highlights row">
+            <ul>
+              <li>
+                Implemented XML-based (QWeb) templating for Odoo Frontend,
+                utilizing its custom JS framework (Owl) akin to React.
+              </li>
+              <li>
+                Extended the Odoo Backend using Python, Werkzeug, and a custom
+                ORM, communicating with PostgresQL.
+              </li>
+              <li>
+                Orchestrated Flask microservices and developed small React apps
+                interfacing with Odoo.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="work section-item">
+          <div class="row space-between">
+            <h3>Dronfies Labs</h3>
+            <div class="url row">
+              <iconify-icon icon="mdi:link-variant"></iconify-icon>
+              <a href="https://dronfies.com" target="_blank">dronfies.com</a>
+            </div>
+          </div>
+          <div class="row space-between">
+            <div class="position subtitle">Co-founder</div>
+             Jan 2016 - Oct 2018
+          </div>
+          <div class="summary p">
+            Dronfies Labs develop technology for the Drone Industry, Aviation &
+            Innovative companies
+          </div>
+
+          <div class="highlights row">
+            <ul>
+              <li>
+                Spearheaded backend and frontend development using Firebase,
+                React, and React Native.
+              </li>
+              <li>
+                Led Android and iOS development with DJI's SDK for drone
+                control.
+              </li>
+              <li>
+                Participated in courses at Berkeley-Haas Lean Launchpad and 500
+                Startups.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="work section-item">
+          <div class="row space-between">
+            <h3>Nobly POS (acquired by Revolut)</h3>
+            <div class="url row">
+              <iconify-icon icon="mdi:link-variant"></iconify-icon>
+              <a
+                href="https://www.linkedin.com/company/nobly---point-of-sale/"
+                target="_blank">nobly on LinkedIn</a
+              >
+            </div>
+          </div>
+          <div class="row space-between">
+            <div class="position subtitle">iOS Developer</div>
+             Dec 2016 - May 2017
+          </div>
+          <div class="summary p">
+            Nobly POS is the #1 customer-rated EPOS system for hospitality and
+            top choice for renowned coffee shops, delis, restaurants and chains.
+          </div>
+
+          <div class="highlights row">
+            <ul>
+              <li>
+                Led the development of the customer loyalty management app.
+              </li>
+              <li>
+                Contributed to the core Nobly iPad app, a platform for
+                electronic invoicing management and POS.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="work section-item">
+          <div class="row space-between">
+            <h3>Globant</h3>
+            <div class="url row">
+              <iconify-icon icon="mdi:link-variant"></iconify-icon>
+              <a href="https://globant.com" target="_blank">globant.com</a>
+            </div>
+          </div>
+          <div class="row space-between">
+            <div class="position subtitle">iOS Developer</div>
+             Oct 2011 - Dec 2016
+          </div>
+          <div class="summary p">
+            Globant is a global technology consulting firm specializing in
+            digital and cognitive transformation. With a focus on delivering
+            innovation, design, and engineering solutions, Globant helps
+            businesses navigate the digital landscape and enhance their customer
+            experiences.
+          </div>
+
+          <div class="highlights row">
+            <ul>
+              <li>
+                Worked on GAP's iPad and iPod applications, serving as POS
+                solutions in various stores.
+              </li>
+              <li>
+                Developed an enterprise application used by United Airlines
+                pilots (iPad only).
+              </li>
+              <li>
+                Contributed to various iOS eBay applications. Key developer on
+                the Flook app released in Canada.
+              </li>
+              <li>
+                Contributed to Vi Challenge iOS app development for Visalus.
+              </li>
+            </ul>
+             Previous roles: Automation Engineer for K12, API developer in Java
+            (Spring) for CityGrid Media, AS developer (Flex) maintaining Disney
+            web pages.
+          </div>
+        </div>
+        <div class="work section-item">
+          <div class="row space-between">
+            <h3>CodigoDelSur</h3>
+            <div class="url row">
+              <iconify-icon icon="mdi:link-variant"></iconify-icon>
+              <a href="https://codigodelsur.com" target="_blank"
+                >codigodelsur.com</a
+              >
+            </div>
+          </div>
+          <div class="row space-between">
+            <div class="position subtitle">ActionScript Developer</div>
+             Dec 2010 - Sep 2011
+          </div>
+          <div class="summary p">
+            CódigoDelSur is a software development company based in Montevideo,
+            Uruguay. Specializing in custom software solutions, mobile app
+            development, and web development
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="education-section">
+        <div class="section-title">
+          <h2>Education</h2>
+          <div class="line"></div>
+        </div>
+
+        <div class="education section-item">
+          <div class="row space-between">
+            <h3>Facultad de Ingeniería - Universidad de la República</h3>
+            <div class="url row">
+              <iconify-icon icon="mdi:link-variant"></iconify-icon>
+              <a href="https://www.fing.edu.uy" target="_blank">fing.edu.uy</a>
+            </div>
+          </div>
+          <div class="row space-between">
+            <div class="study subtitle">Degree in Computer Engineering</div>
+            <div class="date-range">Finished in 2020</div>
+          </div>
+          <div class="courses row">
+            <p>
+              Throughout my Computer Engineering degree, I gained expertise in
+              the following foundational subjects:
+            </p>
+            <ul class="two-columns">
+              <li>Calculus</li>
+              <li>Linear Algebra</li>
+              <li>Geometry</li>
+              <li>Logic</li>
+              <li>Discrete Mathematics</li>
+              <li>Probability and Statistics</li>
+            </ul>
+            <p>
+              My programming proficiency was honed across multiple courses,
+              progressing from basic to advanced levels. The curriculum also
+              covered essential topics like:
+            </p>
+            <ul class="two-columns">
+              <li>Automata Theory, Languages and Computation</li>
+              <li>Computer Architecture</li>
+              <li>Computer Networking</li>
+              <li>Operating Systems</li>
+              <li>Database Fundamentals</li>
+              <li>Numerical Methods</li>
+            </ul>
+            <p>Additionally, I delved into specialized areas including:</p>
+            <ul class="two-columns">
+              <li>Functional Programming</li>
+              <li>Logical Programming</li>
+              <li>Machine Learning Methods</li>
+              <li>Computational Graphics</li>
+              <li>Natural Language Processing</li>
+              <li>Compilers</li>
+            </ul>
+            <p>
+              My educational journey culminated in practical experiences through
+              internships and projects, providing a holistic understanding of
+              software engineering principles.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Languages -->
+      <section class="languages-section">
+        <div class="section-title">
+          <h2>Languages</h2>
+          <div class="line"></div>
+        </div>
+        <div class="language section-item">
+          <h3>English</h3>
+          <div class="fluency row subtitle">Advanced</div>
+          <div class="summary p">
+            I began studying English at a young age, and throughout my career, I
+            have consistently collaborated with English-speaking individuals.
+            This experience has cultivated strong language skills, enabling
+            effective communication in both personal and professional contexts.
+          </div>
+        </div>
+        <div class="language section-item">
+          <h3>Spanish</h3>
+          <div class="fluency row subtitle">Native</div>
+          <div class="summary p">
+            Native language proficiency achieved through being a native speaker
+            from Uruguay.
+          </div>
+        </div>
+      </section>
+
+      <!-- TODO: -->
+      <!-- Awards -->
+      <!-- Projects / Side Projects -->
+      <!-- Publications -->
+      <!-- References -->
+      <!-- Interests -->
+
+      <footer>
+        <div class="version">
+          Codename: <span id="codenameSpanId">The_Original</span>
+        </div>
+        <div class="version">
+          Rendered on: <span id="renderedOnSpanId"></span>
+        </div>
+        <script
+          is:inline
+          src="https://cdn.jsdelivr.net/npm/luxon@3.4.3/build/global/luxon.min.js"
+        ></script>
+        <script is:inline>
+        const codenames = [
+          'ProjectPro_Revolution',
+          'CareerEpic_Voyager',
+          'VersionVirtuoso_IterationX',
+          'ResumeRenaissance_Pinnacle',
+          'Evolvify_CV_Momentum',
+          'QuantumCareer_Leap',
+          'VitaNova_Exploration',
+          'ProfessionaLift_Infinity',
+          'StriveSmart_ReviseX',
+          'OpportunityOrbit_VersionZenith',
+          'ProjectHarmony_Vortex',
+          'CareerZenith_Eclipse',
+          'CodeCraft_MomentumX',
+          'QuantumLeap_Pulse',
+          'VitaVersa_Nebula',
+          'ElevateProspect_Spark',
+          'SkillSurge_Catalyst',
+          'ImpactPulse_Symphony',
+          'CareerVista_Ascend',
+          'CodeForge_Equinox',
+          'FutureFlow_Galaxy',
+          'QuestQuotient_Silhouette',
+          'TechThrive_Zenith',
+          'SkillSphere_Pinnacle',
+          'NexGenNarrative_Orbit',
+          'CareerForge_Eclipse',
+          'EpicEdge_Quantum',
+        ];
+        document.getElementById('codenameSpanId').innerHTML =
+          codenames[Math.floor(Math.random() * codenames.length)] +
+          `_${Math.floor(Math.random() * Math.random() * 100)}`;
+        document.getElementById('renderedOnSpanId').innerHTML =
+          luxon.DateTime.now().toISODate();
+        </script>
+      </footer>
+    </div>
+    <script type="module" defer>
+      console.log(
+        '%cHello There! Thank you for visiting! %s',
+        [
+          'color: red',
+          'background: yellow',
+          'font-size: 30px',
+          'text-shadow: 2px 2px black',
+          'padding: 10px',
+        ].join(';'),
+        '🎉'
+      );
+    </script>
+    <style>
+      :root {
+        --color-primary: hsl(36, 100%, 43%);
+      }
+
+      h1 {
+        color: var(--color-primary);
+      }
+
+      html {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: black;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        display: flex;
+        justify-content: center;
+      }
+
+      li,
+      p {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .button {
+        float: right;
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid #1a1a1a;
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #3b3b3b;
+        cursor: pointer;
+        font-family:
+          Roobert,
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Helvetica,
+          Arial,
+          sans-serif,
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol';
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 24px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        will-change: transform;
+      }
+
+      .button:disabled {
+        pointer-events: none;
+      }
+
+      .button:hover {
+        color: #fff;
+        background-color: #1a1a1a;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+
+      .button:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+
+      @page {
+        /* A4 */
+        /* size: 210mm 297mm;  */
+        size: A4;
+        margin: 10mm; /* approximately 0.4in */
+      }
+
+      .cv-container {
+        /* simulate print page size */
+        max-width: calc(210mm - 20mm);
+        padding: 10mm;
+        margin: 10mm 10mm;
+        border: 1px solid #ccc;
+        border-radius: 16pt;
+        background-color: white;
+        font-family: system-ui, sans-serif;
+      }
+      @media print {
+        /* remove the printing simulations and common decorations , let @page decide the size and margin */
+        .cv-container {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          width: auto;
+          background-color: white;
+          background-image: none;
+          font-size: 14px;
+        }
+        button {
+          display: none;
+        }
+      }
+
+      .section-title {
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+
+      .section-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      footer {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-top: 3em;
+        border-top: 1px solid #ccc;
+        padding: 1.2em 0 1em;
+        display: flex;
+        font-size: 0.8rem;
+        color: #999;
+      }
+      .cv-container footer > div {
+        margin-right: 2em;
+      }
+      a,
+      a:visited,
+      a:active {
+        color: var(--color-primary);
+        text-decoration: none;
+      }
+      a:hover {
+        color: var(--color-primary);
+        text-decoration: underline;
+      }
+
+      section .section-title {
+        margin-top: 3em;
+        display: flex;
+      }
+      section .section-title h2 {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--color-primary);
+        margin: 0;
+      }
+      section .section-title .line {
+        flex-grow: 1;
+        margin: 14px 0 0 1em;
+        height: 2px;
+        background-color: var(--color-primary);
+      }
+      section .section-item {
+        margin-top: 2em;
+      }
+      section .section-item h3 {
+        font-size: 18px;
+        line-height: 1.4;
+        margin: 0;
+      }
+      section .section-item ul {
+        margin: 0.8em 0;
+        padding-left: 16px;
+      }
+      section .section-item ul li {
+        margin-bottom: 0.4em;
+      }
+      iconify-icon {
+        vertical-align: bottom;
+        position: relative;
+        bottom: 1px;
+      }
+      section .row {
+        margin: 0.4em 0;
+      }
+      section .p,
+      section p {
+        line-height: 1.4;
+        margin: 0.8em 0;
+      }
+      section .subtitle {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 500px) {
+        section .subtitle {
+          display: flex;
+          align-items: center;
+        }
+      }
+      section .space-between {
+        display: flex;
+        justify-content: space-between;
+      }
+      section .space-between a {
+        color: #777;
+      }
+      section .keywords {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 8px;
+        margin-top: 0.8em;
+      }
+      section .keywords .item {
+        font-size: 13px;
+        color: #555;
+        padding: 0 4px;
+        height: 22px;
+        line-height: 21px;
+        background: #f1f1f1;
+      }
+      section .two-columns {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 1.5em;
+      }
+      @media screen and (max-width: 500px) {
+        section .two-columns {
+          grid-template-columns: 1fr;
+        }
+      }
+      section ._fz-4 {
+        font-size: 16px;
+      }
+      section ._ul {
+        text-decoration: underline;
+      }
+      section ._text-dim {
+        color: #777;
+      }
+      @media print {
+        section .section-title {
+          margin-top: 2.7em;
+        }
+        section .section-item {
+          margin-top: 1.8em;
+        }
+      }
+      .basics-section h1 {
+        font-size: 36px;
+        font-weight: 600;
+        margin: 0.2em 0 0.2em 0;
+      }
+      .basics-section .contact {
+        color: #777;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4em 1em;
+      }
+      @media screen and (max-width: 500px) {
+        .basics-section .contact {
+          flex-direction: column;
+        }
+      }
+      .basics-section .contact .item a {
+        color: #777;
+      }
+      @media screen and (max-width: 700px) {
+        .education-section .space-between:nth-of-type(2) {
+          flex-wrap: wrap;
+          gap: 0.4em;
+        }
+        .education-section .study {
+          width: 100%;
+        }
+      }
+      .work-section .section-item {
+        break-inside: auto;
+        page-break-inside: auto;
+      }
+    </style>
+  </body>
+</html>

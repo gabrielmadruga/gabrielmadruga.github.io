@@ -1,0 +1,91 @@
+---
+interface Props {}
+
+const title = 'Gabriel Madruga';
+const description = "Gabriel Madruga's CV";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="hsl(32,  72%, 64%)" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={description} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="generator" content={Astro.generator} />
+
+    <meta property="og:url" content="https://madruga.dev" />
+    <link rel="canonical" href="https://madruga.dev" />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' style='background-color:white;'><g><text x='50%' y='60%' dominant-baseline='middle' text-anchor='middle' font-size='90%' fill='black'>GM</text></g></svg>"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <script type="module" defer>
+      console.log(
+        '%cHello There! Thank you for visiting! %s',
+        [
+          'color: red',
+          'font-size: 1rem',
+          'text-shadow: 2px 2px black',
+          'padding: 10px',
+        ].join(';'),
+        '🎉'
+      );
+    </script>
+    <style is:global>
+      :root {
+        /* --primary-h: 0;
+    --primary-s: 0%;
+    --primary-l: 0%;
+    --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l)); */
+        --color-background: hsl(0, 0%, 0%);
+        --color-text: white;
+        --linear-gradient-primary-whash-out: linear-gradient(
+          135deg,
+          hsl(var(--primary-h), var(--primary-s), var(--primary-l)),
+          hsl(var(--primary-h), var(--primary-s), 10%)
+        );
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --color-background: white;
+          --color-text: hsl(0, 0%, 14%);
+        }
+      }
+      html {
+        font-family: system-ui, sans-serif;
+        background: var(--color-background);
+        color: var(--color-text);
+        transition: all 0.2s;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      code {
+        font-family:
+          Menlo,
+          Monaco,
+          Lucida Console,
+          Liberation Mono,
+          DejaVu Sans Mono,
+          Bitstream Vera Sans Mono,
+          Courier New,
+          monospace;
+      }
+    </style>
+  </body>
+</html>
