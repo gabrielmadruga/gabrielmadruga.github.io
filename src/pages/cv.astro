@@ -92,6 +92,49 @@ import '../styles/animate.css';
           <h2>Work</h2>
           <div class="line"></div>
         </div>
+
+        <div class="work section-item">
+          <div class="row space-between">
+            <h3>Kooth (via Neocoast)</h3>
+            <div class="url row">
+              <iconify-icon icon="mdi:link-variant"></iconify-icon>
+              <a
+                href="https://koothplc.com/article/kooth-selected-to-bring-mental-health-care-to-all-13-25s-in-california"
+                target="_blank">Kooth</a
+              >
+               -
+              <iconify-icon icon="mdi:link-variant"></iconify-icon>
+              <a href="https://www.neocoast.com/" target="_blank">Neocoast</a>
+            </div>
+          </div>
+          <div class="row space-between">
+            <div class="position subtitle">Product Engineer</div>
+             May 2023 - Today
+          </div>
+          <div class="summary p">
+            Founded in 2002, Kooth is a pioneer in youth focused digital
+            behavioral health. Its platform is accessible to more than eight
+            million teens and young adults, providing a welcoming place for
+            support without barriers, waiting lists, or stigma.
+          </div>
+
+          <div class="highlights row">
+            <ul>
+              <li>Engaged in full-stack development with a mobile focus.</li>
+              <li>
+                React Native development with expo. The app uses a design system
+                implemented with tamagui, is fully accesible and works in iOS
+                and Android.
+              </li>
+              <li>
+                Contributed to the backend system, actively shaping its
+                event-driven architecture. Key technologies used are Node.js,
+                TypeScript, Jest, PostgreSQL.
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div class="work section-item">
           <div class="row space-between">
             <h3>CALA</h3>
@@ -200,7 +243,7 @@ import '../styles/animate.css';
               </li>
               <li>
                 Extended the Odoo Backend using Python, Werkzeug, and a custom
-                ORM, communicating with PostgresQL.
+                ORM, communicating with PostgreSQL.
               </li>
               <li>
                 Orchestrated Flask microservices and developed small React apps
@@ -448,40 +491,40 @@ import '../styles/animate.css';
           src="https://cdn.jsdelivr.net/npm/luxon@3.4.3/build/global/luxon.min.js"
         ></script>
         <script is:inline>
-        const codenames = [
-          'ProjectPro_Revolution',
-          'CareerEpic_Voyager',
-          'VersionVirtuoso_IterationX',
-          'ResumeRenaissance_Pinnacle',
-          'Evolvify_CV_Momentum',
-          'QuantumCareer_Leap',
-          'VitaNova_Exploration',
-          'ProfessionaLift_Infinity',
-          'StriveSmart_ReviseX',
-          'OpportunityOrbit_VersionZenith',
-          'ProjectHarmony_Vortex',
-          'CareerZenith_Eclipse',
-          'CodeCraft_MomentumX',
-          'QuantumLeap_Pulse',
-          'VitaVersa_Nebula',
-          'ElevateProspect_Spark',
-          'SkillSurge_Catalyst',
-          'ImpactPulse_Symphony',
-          'CareerVista_Ascend',
-          'CodeForge_Equinox',
-          'FutureFlow_Galaxy',
-          'QuestQuotient_Silhouette',
-          'TechThrive_Zenith',
-          'SkillSphere_Pinnacle',
-          'NexGenNarrative_Orbit',
-          'CareerForge_Eclipse',
-          'EpicEdge_Quantum',
-        ];
-        document.getElementById('codenameSpanId').innerHTML =
-          codenames[Math.floor(Math.random() * codenames.length)] +
-          `_${Math.floor(Math.random() * Math.random() * 100)}`;
-        document.getElementById('renderedOnSpanId').innerHTML =
-          luxon.DateTime.now().toISODate();
+          const codenames = [
+            'ProjectPro_Revolution',
+            'CareerEpic_Voyager',
+            'VersionVirtuoso_IterationX',
+            'ResumeRenaissance_Pinnacle',
+            'Evolvify_CV_Momentum',
+            'QuantumCareer_Leap',
+            'VitaNova_Exploration',
+            'ProfessionaLift_Infinity',
+            'StriveSmart_ReviseX',
+            'OpportunityOrbit_VersionZenith',
+            'ProjectHarmony_Vortex',
+            'CareerZenith_Eclipse',
+            'CodeCraft_MomentumX',
+            'QuantumLeap_Pulse',
+            'VitaVersa_Nebula',
+            'ElevateProspect_Spark',
+            'SkillSurge_Catalyst',
+            'ImpactPulse_Symphony',
+            'CareerVista_Ascend',
+            'CodeForge_Equinox',
+            'FutureFlow_Galaxy',
+            'QuestQuotient_Silhouette',
+            'TechThrive_Zenith',
+            'SkillSphere_Pinnacle',
+            'NexGenNarrative_Orbit',
+            'CareerForge_Eclipse',
+            'EpicEdge_Quantum',
+          ];
+          document.getElementById('codenameSpanId').innerHTML =
+            codenames[Math.floor(Math.random() * codenames.length)] +
+            `_${Math.floor(Math.random() * Math.random() * 100)}`;
+          document.getElementById('renderedOnSpanId').innerHTML =
+            luxon.DateTime.now().toISODate();
         </script>
       </footer>
     </div>
